@@ -4,7 +4,26 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    background-color: #FFC09F;
+}
+
 footer {
+    width: 100%;
+    background-color: #ADF7B6;
     position: absolute;
     bottom: 0;
+    text-align: right;
+}
+
+.about {
+    background-color: #FFEE93;
+}
+
+.portfolio {
+    background-color: #FCF5C7;
+}
+
+.contact {
+    background-color: #F7E1D7;
 }

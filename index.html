@@ -2,21 +2,34 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>mavidunya</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/mavidunya.css">
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <header>
-        mavidunya
-        <a href="#" class="btn btn-success">About Me</a>
-        <a href="#" class="btn btn-warning">Portfolio</a>
+    mavidunya
+        <a href="#about" class="btn btn-success">About</a>
+        <a href="#portfolio" class="btn btn-warning">Portfolio</a>
+        <a href="#contact" class="btn btn-info">Contact</a>
     </header>
     <div class="content">
-        Hello World!
+        <div id="about" class="about">
+            <h1 class="text-center" id="about">About Me</h1>
+            <p id="about-text" class="text-center">I will be an engineer</p>
+        </div>
+        <div id="portfolio" class="portfolio">
+            <h1 class="text-center" id="portfolio">Portfolio</h1>
+        </div>
+        <div id="contact" class="contact">
+            <h1 class="text-center" id="contact">Contact</h1>
+        </div>
     </div>
     <footer>
         © 2017
