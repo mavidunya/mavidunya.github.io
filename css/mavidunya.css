@@ -13,7 +13,7 @@ footer {
     text-align: right;
 }
 
-.navbar {
+.container {
     position: fixed;
     float: right;
     list-style: none;
@@ -23,18 +23,18 @@ footer {
     background-color: #ffc09f;
 }
 
-.navbar ul {
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.navbar li {
+li {
     float: left;
     margin-left: 50px;
 }
 
-.navbar a {
+a {
     float: right;
     display: block;
     text-align: right;
