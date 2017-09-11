@@ -14,25 +14,42 @@
 
 <body>
     <header>
-    mavidunya
-        <a href="#about" class="btn btn-success">About</a>
-        <a href="#portfolio" class="btn btn-warning">Portfolio</a>
-        <a href="#contact" class="btn btn-info">Contact</a>
+        <div class="navbar">
+            <div class="container">
+                <ul class="brand">
+                    <li>mavidunya</li>
+                </ul>
+                <ul>
+                    <li><a href="#home" class="btn btn-danger">Home</a></li>
+                    <li><a href="#about" class="btn btn-info">About</a></li>
+                    <li><a href="#portfolio" class="btn btn-warning">Portfolio</a></li>
+                    <li><a href="#contact" class="btn btn-success">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <div class="content">
+        <div id="home" class="home">
+            <h1 class="text-center" id="home">MaviDünya</h1>
+        </div>
         <div id="about" class="about">
-            <h1 class="text-center" id="about">About Me</h1>
-            <p id="about-text" class="text-center">I will be an engineer</p>
+            <h2 class="text-center" id="about">About Me</h1>
+            <img id="photo" src="01.jpg" alt="Photo">
+            <div class="text-center">
+                <span class="code">I will be an engineer</span>
+                <br>
+                <span class="code shell">student@web:~$ </span>
+            </div>
         </div>
         <div id="portfolio" class="portfolio">
-            <h1 class="text-center" id="portfolio">Portfolio</h1>
+            <h2 class="text-center" id="portfolio">Portfolio</h1>
         </div>
         <div id="contact" class="contact">
-            <h1 class="text-center" id="contact">Contact</h1>
+            <h2 class="text-center" id="contact">Contact</h1>
         </div>
     </div>
     <footer>
-        © 2017
+        Copyright © Mavidünya 2017
     </footer>
 </body>
 
