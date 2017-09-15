@@ -5,33 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>mavidunya</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/mavidunya.css">
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scroll.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <ul class="">
-                <li>mavidunya</li>
-            </ul>
-            <ul>
-                <li><a href="#home" class="btn btn-danger">Home</a></li>
-                <li><a href="#about" class="btn btn-info">About</a></li>
-                <li><a href="#portfolio" class="btn btn-warning">Portfolio</a></li>
-                <li><a href="#contact" class="btn btn-success">Contact</a></li>
-            </ul>
+        <div class="navbar">
+            <div class="container">
+                <ul id="brand">
+                    <li>mavidunya</li>
+                </ul>
+                <ul class="navbar-right">
+                    <li><a href="#home" class="btn btn-danger scroll">Home</a></li>
+                    <li><a href="#about" class="btn btn-info scroll">About</a></li>
+                    <li><a href="#portfolio" class="btn btn-warning scroll">Portfolio</a></li>
+                    <li><a href="#contact" class="btn btn-success scroll">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </header>
-    <div class="content">
+    <div class="content" id="content">
         <div id="home" class="home">
-            <h1 class="text-center" id="home">MaviDünya</h1>
+            <h1 class="text-center" id="home">mavidünya</h1>
         </div>
         <div id="about" class="about">
-            <h2 class="text-center" id="about">About Me</h1>
+            <h2 class="text-center" id="about">About Me</h2>
             <img id="photo" src="01.jpg" alt="Photo">
             <div class="text-center">
                 <span class="code">I will be an engineer</span>
@@ -40,10 +44,30 @@
             </div>
         </div>
         <div id="portfolio" class="portfolio">
-            <h2 class="text-center" id="portfolio">Portfolio</h1>
+            <h2 class="text-center" id="portfolio">Portfolio</h2>
+            <img id="portfolio1" src="" alt="Portfolio Photo" class="portfolio-img">
+            <img id="portfolio2" src="" alt="Portfolio Photo" class="portfolio-img">
+            <img id="portfolio3" src="" alt="Portfolio Photo" class="portfolio-img">
+            <img id="portfolio4" src="" alt="Portfolio Photo" class="portfolio-img">
+            <img id="portfolio5" src="" alt="Portfolio Photo" class="portfolio-img">
+            <img id="portfolio6" src="" alt="Portfolio Photo" class="portfolio-img">
         </div>
         <div id="contact" class="contact">
-            <h2 class="text-center" id="contact">Contact</h1>
+            <h2 class="text-center" id="contact">Contact</h2>
+            <div>
+                <form>
+                    <label><span>Your Name</span>
+                        <input type="text" name="name" placeholder="Your Name" required="">
+                    </label>
+                    <label><span>Email Adress</span>
+                        <input type="text" name="email" placeholder="Email" required="">
+                    </label>
+                    <label><span>Message</span>
+                        <textarea name="message" placeholder="Message.." required=""></textarea>
+                    </label>
+                    <button class="">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
     <footer>
