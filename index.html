@@ -6,7 +6,7 @@
     <title>mavidunya</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/mavidunya.css">
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
@@ -16,25 +16,46 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div id="brand">
-                <h1>mavidunya</h1>
+    <div class="wrapper">
+        <div class="header">
+            <div class="wrap-container">
+                <div class="header-logo">
+                    <p>mavidunya</p>
+                    <img src="picture/menuıcon.svg" alt="menu-image" class="menu-btn">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <a href="#home" class="scroll">
+                            <li>Home</li>
+                        </a>
+                        <a href="#about" class="scroll">
+                            <li>About</li>
+                        </a>
+                        <a href="#portfolio" class="scroll">
+                            <li>Portfolio</li>
+                        </a>
+                        <a href="#contact" class="scroll">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#home" class="scroll"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#about" class="scroll"><i class="fa fa-user-o"></i> About</a></li>
-                    <li><a href="#portfolio" class="scroll"><i class="fa fa-pencil-square-o"></i> Portfolio</a></li>
-                    <li><a href="#contact" class="scroll"><i class="fa fa-envelope-o"></i> Contact</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
+        <div class="wrapper-content">
+            <h1></h1>
+
+        </div>
+    </div>
+
+    <!--   HOME   -->
+
     <div class="content" id="content">
         <div id="home" class="home">
             <img src="picture/homebg.gif" class="img-responsive">
         </div>
+
+        <!--   ABOUT   -->
+
         <div id="about" class="about">
             <h2 class="text-center" id="about">About Me</h2>
             <img id="photo" src="picture/about.jpg" class="img-responsive" alt="Photo">
@@ -44,6 +65,9 @@
                 <span class="code shell">student@web:~$ </span>
             </div>
         </div>
+
+        <!--   PORTFOLİO   -->
+
         <div id="portfolio" class="portfolio">
             <h2 class="text-center">Portfolio</h2>
             <div class="project">
@@ -56,25 +80,34 @@
                 <img id="portfolio4" src="picture/portpho.png" alt="Portfolio Photo">
                 <p>Project 4</p>
             </div>
+
         </div>
+
+        <!--   CONTACT   -->
+
         <div id="contact" class="contact">
             <h2 class="text-center" id="contact">Contact</h2>
-            <div class="contact-form">
-                <div class="glass">
-                    <form>
-                        <img src="picture/contactphoto.png" class="contact-photo">
-                        <input class="formclass" type="text" name="name" placeholder="Your Name" required="">
-                        <input class="formclass" type="text" name="email" placeholder="Your E-mail" required="">
-                        <textarea class="formclass" name="message" placeholder="Message.." required=""></textarea>
-                        <button class="formclass"><i class="fa fa-paper-plane-o"></i> Submit</button>
+            <div class="wrap-container">
+                <div class="contact-image">
+                    <img src="picture/contactphoto.png" alt="contact-image">
+                </div>
+                <div class="contact-form">
+                    <form action="">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="E-mail" required>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Message.." required></textarea>
+                        <br>
+                        <input type="submit" value="Send" class="submit">
                     </form>
                 </div>
             </div>
         </div>
-    </div>
-    <footer>
-        Copyright © Mavidünya 2017
-    </footer>
+
+        <!--   FOOTER   -->
+
+        <footer>
+            Copyright © Mavidünya 2017
+        </footer>
 </body>
 
 </html>
